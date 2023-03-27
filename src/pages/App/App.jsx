@@ -5,7 +5,7 @@ import './App.css';
 import AuthPage from '../Authpage/AuthPage';
 import NavBar from '../../components/NavBar/NavBar';
 import Homepage from '../Home/homepage';
-import Playlist from '../Playlist/playlist';
+import PlayList from '../Playlist/playlist';
 
 export default function App() {
   const [user, setUser] = useState(getUser());
@@ -17,7 +17,7 @@ export default function App() {
             <NavBar user={user} setUser={setUser} />
             <Routes>
               <Route path="/homepage" element={<Homepage />}/>
-              <Route path="/playlist" element={<Playlist />} />
+              <Route path="/playlist" element={<PlayList />} />
             </Routes>
           </>
           :
