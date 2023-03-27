@@ -4,6 +4,8 @@ import { getUser } from '../../utilities/users-service';
 import './App.css';
 import AuthPage from '../Authpage/AuthPage';
 import NavBar from '../../components/NavBar/NavBar';
+import Homepage from '../Home/homepage';
+import Playlist from '../Playlist/playlist';
 
 export default function App() {
   const [user, setUser] = useState(getUser());
@@ -14,9 +16,8 @@ export default function App() {
           <>
             <NavBar user={user} setUser={setUser} />
             <Routes>
-              {/* Route components in here */}
-              {/* <Route path="/orders/new" element={<NewOrderPage />} />
-              <Route path="/orders" element={<OrderHistoryPage />} /> */}
+              <Route path="/homepage" element={<Homepage />}/>
+              <Route path="/playlist" element={<Playlist />} />
             </Routes>
           </>
           :
