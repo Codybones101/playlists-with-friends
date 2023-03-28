@@ -3,8 +3,7 @@ import PlaylistForm from "../../components/PlaylistForm/PlaylistForm";
 import * as playListAPI from "../../utilities/playlists-api";
 import { Link } from "react-router-dom";
 
-export default function PlayList () {
-    const [playLists, setPlayLists] = useState([]);
+export default function PlayList ({playLists, setPlayLists}) {
 
     async function handleAddPlayList(playList) {
     
@@ -18,7 +17,7 @@ export default function PlayList () {
             <PlaylistForm handleAddPlayList={handleAddPlayList} />
             <button />
         <h1>Playlist Page</h1>
-            {playLists.map((p, idx) => <Link to="">{p.name}</Link>)}
+            {playLists.map((p, idx) => <Link to={`/playlist/${p._id}`}>{p.name}</Link>)}
         </div>
     );
 }
