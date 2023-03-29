@@ -2,6 +2,7 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const songSchema = new Schema({
+    user: {type: Schema.Types.ObjectId, required: true},
     artist: {type: String, required: true},
     songTitle: {type: String, required: true},
     link: {type: String, required: true}

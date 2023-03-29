@@ -8,6 +8,7 @@ import Homepage from '../Home/homepage';
 import PlayList from '../Playlist/playlist';
 import PlayListDetailPage from "../PlaylistDetailPage/PlaylistDetail";
 import * as playListsAPI from "../../utilities/playlists-api";
+import * as songAPI from "../../utilities/song-api";
 
 
 export default function App() {
@@ -20,7 +21,6 @@ export default function App() {
     }
     getAllPlayLists()
   },[])
-  console.log(playLists)
   return (
     <main className="App">
       { user ?
@@ -29,7 +29,7 @@ export default function App() {
             <Routes>
               <Route path="/homepage" element={<Homepage />}/>
               <Route path="/playlist" element={<PlayList playLists={playLists} setPlayLists={setPlayLists} />} />
-              <Route path="/playlist/:id" element={<PlayListDetailPage playLists={playLists} />} />
+              <Route path="/playlist/:id" element={<PlayListDetailPage setPlayLists={setPlayLists} playLists={playLists} />} />
             </Routes>
           </>
           :
