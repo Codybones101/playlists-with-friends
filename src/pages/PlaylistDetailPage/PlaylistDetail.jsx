@@ -1,10 +1,13 @@
 import { useParams } from "react-router-dom";
 import SongForm from "../../components/SongForm/SongForm";
 import * as songsAPI from "../../utilities/song-api";
-// import * as playListsAPI from '../../utilities/playlists-api';
+import { useState } from 'react';
+import PlaylistForm from "../../components/PlaylistForm/PlaylistForm";
+import * as playListsAPI from '../../utilities/playlists-api';
 
 
 export default function PlayListDetailPage({playLists, setPlayLists}) {
+    const [editPlaylist, setEditPlaylist] = useState(false);
     const {id} = useParams();
     const playList = playLists.find(p => p._id === id)
     const songs = playList.songs.map((s, idx) => (
@@ -34,10 +37,20 @@ export default function PlayListDetailPage({playLists, setPlayLists}) {
         
     }
 
+    async function updatePlayList(data, id) {
+        const newplayList = await playListsAPI.update(data, id)
+        const updatedPlaylists = playLists.map(function(p) {
+            return p._id === newplayList._id ? newplayList : p
+        })
+        setPlayLists(updatedPlaylists)
+        setEditPlaylist(false)
+    }
+
     return(
         <>
         {/* <iframe width="560" height="315" src="https://www.youtube.com/embed/LYcWGG2tGzc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> */}
-        {playList.name}
+        {editPlaylist ? <PlaylistForm updatePlayList={updatePlayList} playList={playList} /> : playList.name} 
+        {!editPlaylist && <button onClick={() => setEditPlaylist(!editPlaylist) }>Edit Playlist</button>}
         <SongForm handleAddSong={handleAddSong} />
         {songs}
         </>

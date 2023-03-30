@@ -8,3 +8,7 @@ export async function addPlayList(playList) {
 export async function getAll() {
     return sendRequest(BASE_URL)
 }
+
+export async function update(playList, id) {
+    return sendRequest(`${BASE_URL}/${id}`, 'PUT', playList)
+}

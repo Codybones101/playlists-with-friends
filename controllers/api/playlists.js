@@ -3,6 +3,7 @@ const PlayList = require('../../models/playlist');
 module.exports = {
     create,
     getAll,
+    update
 };
 
 async function create(req, res) {
@@ -15,4 +16,8 @@ async function create(req, res) {
 async function getAll(req, res) {
     const playLists = await PlayList.find()
     res.json(playLists)
+}
+async function update(req, res) {
+    const playList = await PlayList.findByIdAndUpdate({_id: req.params.id, user: req.user._id} , req.body, {new: true});
+    res.json(playList)
 }

@@ -17,7 +17,7 @@ export default function PlayList ({playLists, setPlayLists}) {
     return(
         <div>
             <PlaylistForm handleAddPlayList={handleAddPlayList} />
-            <button />
+            {/* <button /> */}
         <h1>Playlist Page</h1>
         <div className="playlists-container">
             {playLists.map((p, idx) => <Link key={p._id} to={`/playlist/${p._id}`}>{p.name}</Link>)}
