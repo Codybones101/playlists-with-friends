@@ -7,6 +7,7 @@ const ensureLoggedIn = require('../../config/ensureLoggedIn');
 
 // POST /api/users (create a user - sign up)
 router.post('/:id', songCtrl.create);
+router.delete('/:id', songCtrl.delete);
 
 // GET /api/users/check-token
 
