@@ -14,6 +14,7 @@ import * as songAPI from "../../utilities/song-api";
 export default function App() {
   const [user, setUser] = useState(getUser());
   const[playLists, setPlayLists] = useState([]);
+
   useEffect(() => {
     async function getAllPlayLists() {
       const playLists = await playListsAPI.getAll()
@@ -21,12 +22,14 @@ export default function App() {
     }
     getAllPlayLists()
   },[])
+
   return (
     <main className="App">
       { user ?
           <>
             <NavBar user={user} setUser={setUser} />
             <Routes>
+              <Route path="/" element={<Homepage />}/>
               <Route path="/homepage" element={<Homepage />}/>
               <Route path="/playlist" element={<PlayList playLists={playLists} setPlayLists={setPlayLists} />} />
               <Route path="/playlist/:id" element={<PlayListDetailPage setPlayLists={setPlayLists} playLists={playLists} />} />

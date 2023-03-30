@@ -9,6 +9,6 @@ async function create(req, res) {
    const playList = await Playlist.findById(req.params.id)
    playList.songs.push(req.body)
    await playList.save()
-   res.json(req.body)
+   res.json(playList)
 
 }
