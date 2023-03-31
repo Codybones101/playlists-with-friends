@@ -1,3 +1,13 @@
-body {
-    background-color: blue;
+.home-text {
+    color: rgb(229, 234, 241);
+}
+
+
+.secondary {
+    font-size: 50px;
+    color: rgb(35, 116, 255);
+    background-color: lightgreen;
+    border: solid;
+    border-width: 12px;
+    border-color: aliceblue;
 }
