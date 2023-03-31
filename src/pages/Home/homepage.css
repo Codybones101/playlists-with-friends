@@ -10,4 +10,19 @@
     border: solid;
     border-width: 12px;
     border-color: aliceblue;
+    padding: 20px;
+}
+
+.homediv {
+    padding: 30px;
+}
+
+.home-text {
+    margin-bottom: 40px;
+    background-color: lightgreen;
+    color: rgb(36,115,255);
+    border: solid;
+    border-width: 3px;
+    border-color: aliceblue;
+    padding: 10px;
 }
