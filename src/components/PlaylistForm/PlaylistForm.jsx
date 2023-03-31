@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import "./PlaylistForm.css"
 
 export default function PlaylistForm({handleAddPlayList, playList, updatePlayList}) {
     const [playListData, setPlaylistData] = useState({
@@ -16,9 +17,9 @@ export default function PlaylistForm({handleAddPlayList, playList, updatePlayLis
     }
 
     return(
-        <form onSubmit={handleSubmit}>
-            <input value={playListData.name || "" } type="text" name="name" onChange={handleChange} />
-            <button>{playList ? "Edit Playlist Name" : "Add Playlist" }</button>
+        <form className="addlistfrm" onSubmit={handleSubmit}>
+            <input className="addlistinp" value={playListData.name || "" } type="text" name="name" onChange={handleChange} />
+            <button className="addlistbtn">{playList ? "Edit Playlist Name" : "Add Playlist" }</button>
         </form>
     )
 }

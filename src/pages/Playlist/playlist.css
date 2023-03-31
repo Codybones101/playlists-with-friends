@@ -1,4 +1,29 @@
 .playlists-container {
+    border: solid black;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    margin: 15px auto 30px auto;
+    padding: 30px 50px;
+    max-width: fit-content;
+    background-color: rgba(244, 238, 238, .2);
+    backdrop-filter: blur(8px);
+    border-radius: 10px;
+    font-size: 30px;
+}
+
+.ptitle {
+    border: solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    margin: 15px auto 30px auto;
+    padding: 30px 50px;
+    max-width: fit-content;
+    background-color: rgba(244, 238, 238, .2);
+    backdrop-filter: blur(8px);
+    border-radius: 10px;
+    font-size: 30px;
 }
