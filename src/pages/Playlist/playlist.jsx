@@ -14,10 +14,10 @@ export default function PlayList ({playLists, setPlayLists}) {
         
     }
     return(
-        <div>
+        <div className="playlists-container1">
             <PlaylistForm handleAddPlayList={handleAddPlayList} />
             {/* <button /> */}
-        <h1 className="ptitle">Playlists Below</h1>
+        <h1 className="ptitle">Click on playlists below</h1>
         <div className="playlists-container">
             {playLists.map((p, idx) => <Link key={p._id} to={`/playlist/${p._id}`}>{p.name}</Link>)}
         </div>

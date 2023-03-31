@@ -25,7 +25,7 @@ export default function SongForm({handleAddSong}) {
 
     return(
         <form className="songform" onSubmit={handleSubmit}>
-            <h2>Add Song Below!</h2>
+            <h2>Add Song Below</h2>
             <div>
                 <input className="artist" type="text" name="artist" value={songData.artist} placeholder="Artist" onChange={handleChange}/>
                 <input className="title" type="text" name="songTitle"value={songData.songTitle} placeholder="Song Title" onChange={handleChange} />
