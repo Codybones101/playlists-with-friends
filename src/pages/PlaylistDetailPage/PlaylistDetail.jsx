@@ -4,6 +4,7 @@ import * as songsAPI from "../../utilities/song-api";
 import { useState } from 'react';
 import PlaylistForm from "../../components/PlaylistForm/PlaylistForm";
 import * as playListsAPI from '../../utilities/playlists-api';
+import "./PlaylistDetail.css";
 
 
 export default function PlayListDetailPage({playLists, setPlayLists}) {
@@ -11,7 +12,7 @@ export default function PlayListDetailPage({playLists, setPlayLists}) {
     const {id} = useParams();
     const playList = playLists.find(p => p._id === id)
     const songs = playList.songs.map((s, idx) => (
-        <div>
+        <div className="flx-vrt">
             <iframe key={s.link} width={560} height={315} src={s.link} title={"YouTube video player"} frameBorder={0} allow={"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"} allowFullScreen></iframe>
             <button onClick={() => handleDelete(s._id)}>Delete</button>
         </div>

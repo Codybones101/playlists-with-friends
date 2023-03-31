@@ -23,13 +23,31 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--tan-4);
   background-image: url(https://routenote.com/blog/wp-content/uploads/2020/08/Playlists.jpg);
-  padding: 2vmin;
   height: 100vh;
 }
+
+/* section {
+  width: 100%;
+}
+
+
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1400px;
+  padding: 30px 40px;
+} */
+
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+iframe {
+  border-radius: 8px;
 }
 
 #root {
@@ -152,3 +170,4 @@ button[type="submit"] {
   grid-column: span 2;
   margin: 1vmin 0 0;
 }
+
