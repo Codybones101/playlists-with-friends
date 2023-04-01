@@ -12,3 +12,7 @@ export async function getAll() {
 export async function update(playList, id) {
     return sendRequest(`${BASE_URL}/${id}`, 'PUT', playList)
 }
+
+export async function getPlayList(id) {
+    return sendRequest(`${BASE_URL}/${id}`)
+}
