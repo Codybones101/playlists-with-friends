@@ -1,70 +1,90 @@
-# Getting Started with Create React App
+<div id="header" align="center">
+  <img src="public/Screen Shot 2023-04-03 at 4.07.40 PM.png" width="800" height="400">
+</div>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  <div id="description" align="center">
 
-## Available Scripts
+  # Playlists with friends
 
-In the project directory, you can run:
+  ### [CLICK TO DEMO](https://playlists-with-friends.herokuapp.com/)
 
-### `npm start`
+  ##### Cody Bonebrake
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+  [![LinkedIn Badge](https://img.shields.io/badge/-codybonebrake-blue?style=flat&logo=Linkedin&logoColor=black)](https://www.linkedin.com/in/codybonebrake/)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+  ## Description
 
-### `npm test`
+  Playlists with friends is a music playlist sharing app that allows you to compile songs using multiple different music websites. By using an Embed link, you can populate your playlist with the song and webplayer of your choice. The three web players I used are Youtube, Soundcloud & Spotify. Now you can listen to your favorite underground music in the same location as big hits *and* share your playlists with your friends. 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  ## Screenshots 
 
-### `npm run build`
+    |   Description | Screenshot | 
+  
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  <h3>Homepage</h3> | <img
+    src="public/Screen Shot 2023-04-03 at 4.07.40 PM.png"
+    width="700"
+  /> 
+  | <h3 align="center">Playlist Page</h3> | <img
+  src="public/Screen Shot 2023-04-03 at 4.22.11 PM.png"
+  width="700"
+  />
+  | <h3 align="center">Add Song Page</h3> | <img
+  src="public/Screen Shot 2023-04-03 at 4.23.09 PM.png"
+  width="700"
+  />
+  | <h3 align="center">Sign up/Log in Page</h3> | <img
+  src="public/Screen Shot 2023-04-03 at 5.03.16 PM.png"
+  width="700"
+  />
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ## Technologies Used
+![MongoDB](https://img.shields.io/badge/-MongoDB-05122A?style=flat&logo=mongodb)
+![Express](https://img.shields.io/badge/-Express-05122A?style=flat&logo=express)
+![React](https://img.shields.io/badge/-React-05122A?style=flat&logo=react)
+![Node](https://img.shields.io/badge/-Node.js-05122A?style=flat&logo=node.js)
+![Git](https://img.shields.io/badge/-Git-05122A?style=flat&logo=git)
+![Github](https://img.shields.io/badge/-GitHub-05122A?style=flat&logo=github)
+![VSCode](https://img.shields.io/badge/-VS_Code-05122A?style=flat&logo=visualstudio)
+![Trello](https://img.shields.io/badge/-Trello-05122A?style=flat&logo=trello)
+![Heroku](https://img.shields.io/badge/-Heroku-05122A?style=flat&logo=heroku)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Getting Started
 
-### `npm run eject`
+<details open>
+  <summary> Creating a Playlist </summary>
+    1. Type the desired name of your playlist into the add playlist imput provided.
+    2. The playlist link will generate below.
+    3. Click on the playlist link to add songs to the playlist.
+</details>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<details>
+  <summary> How to Add a song to a Playlist</summary>
+    1. Go to a youtube page, spotify webplayer or soundcloud page.
+    2. Click on the share button expanding sharing options for your song of choice.
+    3. Click on the Embed link for that song.
+    4. In the Embed link highlight and copy everything within the quotations in the src portion of the embed link code. This will look like src="youtube.com/embed/234987245jkjkfd".
+    5. Paste the copied code into the provided link input to add your song to the playlist.
+</details>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<details open>
+  <summary> Trello Board </summary>
+  <a href="https://trello.com/b/F7CBhyTf/playlists-with-friends"
+    > https://trello.com/b/F7CBhyTf/playlists-with-friends </a
+  >
+</details>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<details open>
+  <summary> Deployed Link (Heroku) </summary>
+  <a href="https://playlists-with-friends.herokuapp.com//"
+    > https://playlists-with-friends.herokuapp.com/ </a
+  >
+</details>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+  </div>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+  
