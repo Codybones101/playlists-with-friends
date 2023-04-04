@@ -53,7 +53,7 @@
 
 <details open>
   <summary> Creating a Playlist </summary>
-    1. Type the desired name of your playlist into the add playlist imput provided.
+    1. Type the desired name of your playlist into the add playlist input provided.
     2. The playlist link will generate below.
     3. Click on the playlist link to add songs to the playlist.
 </details>
