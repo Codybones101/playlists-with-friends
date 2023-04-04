@@ -51,7 +51,8 @@
 
 ## Getting Started
 
-<details open>
+<details>
+
   <summary> Creating a Playlist </summary>
     1. Type the desired name of your playlist into the add playlist input provided.
     2. The playlist link will generate below.
@@ -68,18 +69,30 @@
 </details>
 
 <details open>
+  <summary> Walkthrough Video</summary>
+  <a href="https://vimeo.com/814420145"
+    > https://vimeo.com/814420145 </a
+  >
+
+<details>
   <summary> Trello Board </summary>
   <a href="https://trello.com/b/F7CBhyTf/playlists-with-friends"
     > https://trello.com/b/F7CBhyTf/playlists-with-friends </a
   >
 </details>
 
-<details open>
+
+<details>
   <summary> Deployed Link (Heroku) </summary>
   <a href="https://playlists-with-friends.herokuapp.com//"
     > https://playlists-with-friends.herokuapp.com/ </a
   >
+
+
+
 </details>
+
+
 
 
 
